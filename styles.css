@@ -59,6 +59,7 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
 .button-dark { background: var(--forest); color: #fff; }
 .button-dark:hover { background: var(--forest-deep); }
 .hero-note { display: flex; align-items: center; gap: 9px; margin-top: 25px; color: rgba(255,255,255,.75); font-size: 12px; }
+.hero-reservation { max-width: 390px; color: rgba(255,255,255,.88); font-size: 11px; font-weight: 700; letter-spacing: .05em; }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: #ddbd96; }
 .scroll-cue { position: absolute; right: clamp(22px, 5vw, 76px); bottom: 56px; display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,.72); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; writing-mode: vertical-rl; }
 .scroll-line { width: 1px; height: 60px; background: rgba(255,255,255,.4); }
@@ -71,6 +72,13 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
 .text-link { display: inline-flex; align-items: center; gap: 14px; margin-top: 10px; color: var(--forest); font-size: 14px; font-weight: 700; }
 .text-link span, .card-link span, .button span { font-size: 18px; }
 .text-link:hover { color: var(--warm); transform: translateX(3px); }
+
+.editorial-story { display: grid; grid-template-columns: .18fr .9fr 1fr; gap: clamp(22px, 5vw, 75px); align-items: start; background: #fff; border-top: 1px solid var(--line); }
+.editorial-story-mark { color: var(--warm); font-family: var(--serif); font-size: 23px; line-height: .9; }
+.editorial-story-mark span { display: inline-block; margin-top: 16px; color: #89968b; font-family: var(--sans); font-size: 11px; letter-spacing: .1em; }
+.editorial-story-copy h2 { margin-bottom: 0; }
+.editorial-story-text { max-width: 460px; padding-top: 10px; color: #5f6a61; font-size: 16px; }
+.editorial-story-text p + p { margin-top: 18px; }
 
 .experience-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; background: var(--cream); }
 .experience-card { position: relative; min-height: 340px; overflow: hidden; border-radius: 2px; color: #fff; }
@@ -103,6 +111,14 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
 .cabin-card:hover .cabin-arrow { color: var(--warm); transform: translate(3px, -3px); }
 .micro-note { margin: 28px 0 0; color: #7b837a; font-size: 12px; }
 
+.events-feature { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(38px, 8vw, 125px); align-items: center; background: #e5ebe3; }
+.events-image { height: min(560px, 48vw); min-height: 360px; overflow: hidden; }
+.events-image img { object-position: center; }
+.events-copy { max-width: 470px; }
+.events-copy h2 { margin-bottom: 24px; }
+.events-copy > p:not(.eyebrow):not(.events-note) { max-width: 410px; color: #5f6b61; font-size: 17px; }
+.events-note { max-width: 380px; margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(29,42,33,.15); color: #788279; font-size: 13px; }
+
 .camping-feature { display: grid; grid-template-columns: 1.16fr .84fr; gap: clamp(38px, 8vw, 130px); align-items: center; background: var(--mist); }
 .camping-image { height: min(620px, 57vw); min-height: 390px; overflow: hidden; }
 .camping-image img { object-position: center; }
@@ -127,6 +143,7 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
 .meal-times .micro-note { border-top: 1px solid rgba(29,42,33,.22); padding-top: 22px; }
 
 .reservation { background: var(--forest); color: #fff; }
+.reservation-banner { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 45px; color: #e0bb92; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
 .reservation-head { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 40px; align-items: end; }
 .reservation h2 { margin-bottom: 0; color: #fff; }
 .reservation-head > p:last-child { max-width: 285px; margin-bottom: 7px; color: rgba(255,255,255,.65); font-size: 15px; }
@@ -157,11 +174,11 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
 .label-finca { top: 49%; left: 44%; display: flex; align-items: center; gap: 8px; color: var(--warm); }
 .label-city { top: 24%; left: 22%; color: #738176; font-weight: 500; }
 .pin { width: 12px; height: 12px; border: 3px solid var(--warm); border-radius: 50%; background: #fff; box-shadow: 0 0 0 6px rgba(201,117,64,.13); }
-.map-coords { position: absolute; right: 24px; bottom: 22px; color: #7e8a80; font-size: 10px; line-height: 1.5; letter-spacing: .1em; text-align: right; }
 
 .final-cta { display: flex; flex-direction: column; align-items: center; padding-top: clamp(100px, 13vw, 180px); padding-bottom: clamp(100px, 13vw, 180px); background: var(--forest-deep); color: #fff; text-align: center; }
 .final-cta h2 { margin-bottom: 24px; color: #fff; font-size: clamp(3.4rem, 7vw, 7rem); }
 .final-cta > p:not(.eyebrow):not(.phone) { max-width: 410px; margin-bottom: 30px; color: rgba(255,255,255,.62); }
+.final-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .button-large { min-width: 240px; }
 .phone { margin: 28px 0 0; color: rgba(255,255,255,.54); font-size: 13px; letter-spacing: .08em; }
 .site-footer { padding: 42px clamp(22px, 7.5vw, 120px) 25px; background: #111c15; color: #fff; }
@@ -211,6 +228,8 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
   .hero-image { background-position: 63% center; }
   .scroll-cue { display: none; }
   .intro, .camping-feature, .flavor, .location { grid-template-columns: 1fr; gap: 42px; }
+  .editorial-story { grid-template-columns: 1fr; gap: 20px; }
+  .editorial-story-mark { display: none; }
   .intro-copy { max-width: 510px; }
   .section-heading { align-items: start; flex-direction: column; margin-bottom: 36px; }
   .section-note { text-align: left; }
@@ -219,6 +238,8 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
   .experience-grid { gap: 12px; }
   .experience-card-tall { min-height: 480px; }
   .camping-image { height: min(100vw, 520px); min-height: 320px; }
+  .events-feature { grid-template-columns: 1fr; gap: 28px; }
+  .events-image { height: min(86vw, 470px); min-height: 300px; }
   .reservation-head { grid-template-columns: 1fr; gap: 8px; }
   .reservation-head > p:last-child { margin-top: 10px; }
   .steps { grid-template-columns: 1fr 1fr; margin-top: 60px; }
@@ -231,15 +252,16 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
 }
 
 @media (max-width: 560px) {
-  .hero h1 { font-size: clamp(3.6rem, 16vw, 5.5rem); }
+  .hero { min-height: 670px; padding: 128px 22px 54px; }
+  .hero h1 { font-size: clamp(3rem, 14vw, 5rem); }
   .hero-copy { font-size: 16px; }
   .hero-actions { align-items: stretch; flex-direction: column; max-width: 300px; }
   .button { width: 100%; }
   h2 { font-size: clamp(3rem, 14vw, 4.5rem); }
   .experience-grid { display: block; }
-  .experience-card, .experience-card-tall, .experience-card-wide { min-height: 360px; margin-bottom: 12px; }
+  .experience-card, .experience-card-tall, .experience-card-wide { min-height: 330px; margin-bottom: 12px; }
   .card-content h3 { font-size: 34px; }
-  .section-pad { padding-top: 82px; padding-bottom: 82px; }
+  .section-pad { padding-top: 72px; padding-bottom: 72px; }
   .flavor-copy { max-width: 100%; }
   .meal-block { grid-template-columns: 38px 1fr; gap: 12px; }
   .reservation .section-pad { padding-left: 22px; padding-right: 22px; }
@@ -253,6 +275,9 @@ h1 em, h2 em { color: var(--warm); font-style: italic; }
   .modal-content h2 { font-size: 3.1rem; }
   .modal-content .button { width: 100%; }
   .floating-whatsapp { right: 14px; bottom: 14px; }
+  .reservation-banner { margin-bottom: 32px; font-size: 10px; line-height: 1.45; }
+  .final-actions { width: min(100%, 320px); align-items: stretch; flex-direction: column; }
+  .final-actions .button { width: 100%; }
   .footer-bottom { align-items: start; flex-direction: column; }
 }
 

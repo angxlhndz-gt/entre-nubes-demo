@@ -25,9 +25,10 @@ const business = {
     campo: "Hola, quisiera consultar disponibilidad para Casa de Campo.",
     cipreses: "Hola, quisiera consultar disponibilidad para Los Cipreses.",
     montana: "Hola, quisiera consultar disponibilidad para De La Montaña.",
-    camping: "Hola, quisiera información sobre camping.",
+    camping: "Hola, quisiera consultar disponibilidad para camping.",
     pase: "Hola, quisiera reservar un pase de día.",
-    comidas: "Hola, quisiera información sobre desayunos y almuerzos."
+    comidas: "Hola, quisiera consultar el servicio de comidas bajo reserva.",
+    eventos: "Hola, quisiera solicitar información para realizar un evento."
   },
   cabins: {
     campo: {
